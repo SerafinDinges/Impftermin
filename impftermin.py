@@ -39,7 +39,7 @@ def check_availability():
                       impfzentren[stat["id"]] + "'")
             any_free = True
 
-            # ass -sound 'default' option if you want a notification sound
+            # add -sound 'default' option to terminal-notifier if you want a notification sound
 
     if any_free == False:
         print("No availability. Checking again in 5 seconds.")
