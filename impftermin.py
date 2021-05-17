@@ -1,6 +1,6 @@
 # Written for MacOs. Adaptations needed for other systems. 
 # This script depends on the terminal-notifier library e.g. using homebrew via $ brew install terminal-notifier
-# Alternatively you can comment out lines 6 and 36 and use the webbrowser, but this will open quite a few tabs as soon as there are any availilibilities
+# Alternatively you can comment out lines 7 and 30 and use the webbrowser, but this will open quite a few tabs as soon as there are any availilibilities
 
 import requests
 import json
