@@ -8,13 +8,6 @@ import json
 import os
 import time
 
-
-def notify(title, text):
-    os.system("""
-              osascript -e 'display notification "{}" with title "{}"'
-              """.format(text, title))
-
-
 def check_availability():
     url = 'https://api.impfstoff.link/?v=0.3&robot=1'
 
