@@ -1,3 +1,4 @@
+# Written for MacOs. Adaptations needed for other systems. 
 # This script depends on the terminal-notifier library e.g. using homebrew via $ brew install terminal-notifier
 # Alternatively you can comment out lines 6 and 36 and use the webbrowser, but this will open quite a few tabs as soon as there are any availilibilities
 
@@ -14,7 +15,7 @@ def notify(title, text):
               """.format(text, title))
 
 
-def checkAvailability():
+def check_availability():
     url = 'https://api.impfstoff.link/?v=0.3&robot=1'
 
     r = requests.get(url)
@@ -46,7 +47,7 @@ def checkAvailability():
     if any_free:
         print("Found availability. Checking again in 30 seconds.")
         time.sleep(30)
-    checkAvailability()
+    check_availability()
 
 
-checkAvailability()
+check_availability()
